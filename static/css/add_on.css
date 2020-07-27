@@ -1,3 +1,13 @@
+@charset "utf-8";
+
+html h1, h2, h3, h4  {
+    /* font-family: 'Segoe UI','Helvetica','Helvetica Neue','Arial',YuGothic,'Yu Gothic','メイリオ', Meiryo,sans-serif; */
+    font-family: 'Helvetica Neue', 'Arial', 'YuGothic', 'Yu Gothic', '游ゴシック体', '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'MS ゴシック', 'MS Gothic', 'sans-serif';
+}
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 button#menu-button {
     font-size: 1.25rem;
     border-radius: 0.33em;

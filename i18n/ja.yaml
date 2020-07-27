@@ -1,28 +1,28 @@
 - id: skip_to_content
-  translation: skip to content
+  translation: コンテンツへスキップ
 - id: nav_main_navigation
-  translation: Main navigation
+  translation: メインナビゲーション
 - id: nav_button_menu
-  translation: Menu
+  translation: メニュー
 - id: discuss_show_comments_button
-  translation: Show comments
+  translation: コメントを見る
 - id: discuss_comments_disabled
-  translation: Disqus comments are disabled.
+  translation: Disqus コメントは無効になっています。
 - id: discuss_js_disabled
-  translation: Enable JavaScript to view Disqus comments.
+  translation: Disqus コメントを表示するには JavaScript を有効にしてください。
 - id: dark_theme
-  translation: "dark theme:"
+  translation: "ダークモード:"
 - id: table_of_contents
-  translation: Table of contents
+  translation: 目次
 - id: publish_date
-  translation: "Publish date:"
+  translation: "投稿日:"
 - id: last_updated
-  translation: "Last updated:"
+  translation: "最終更新日:"
 - id: tags
-  translation: "Tags:"
+  translation: "タグ:"
 - id: aria_label_tags
-  translation: tags
+  translation: タグ
 - id: search_placeholder
-  translation: Search by title...
+  translation: タイトルで検索
 - id: search_aria_label
-  translation: Search by title
+  translation: タイトルで検索

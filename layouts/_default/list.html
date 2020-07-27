@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main id="main">
-  <h1>{{ .Title }}</h1>
+  <div class="title-and-dm-button"><h1>{{ .Title }}</h1>{{ partial "dark_mode.html" . }}</div>
   {{ if site.Params.search }}
   <input
     id="search"

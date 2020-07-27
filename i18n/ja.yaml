@@ -11,7 +11,7 @@
 - id: discuss_js_disabled
   translation: Disqus コメントを表示するには JavaScript を有効にしてください。
 - id: dark_theme
-  translation: "ダークモード:"
+  translation: "ダクモ:"
 - id: table_of_contents
   translation: 目次
 - id: publish_date

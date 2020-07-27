@@ -1,0 +1,6 @@
+{{ define "main" }}
+  <main id="main">
+    <div class="title-and-dm-button"><h1>{{ .Title }}</h1>{{ partial "dark_mode.html" . }}</div>
+    {{ .Content }}
+  </main>
+{{ end }}

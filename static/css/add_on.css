@@ -101,13 +101,16 @@ p + p {
     .main-and-footer > div {
         padding: 30px;
     }
-    .link-icon {
+    svg.link-icon {
         display: none;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     .main-and-footer > div {
         padding: 10px;
+    }
+    li svg.bookmark {
+        margin-right: 0;
     }
 }
 

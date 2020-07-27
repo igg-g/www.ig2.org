@@ -23,6 +23,6 @@
 - id: aria_label_tags
   translation: タグ
 - id: search_placeholder
-  translation: タイトルで検索
+  translation: タイトルで検索...
 - id: search_aria_label
-  translation: タイトルで検索
+  translation: タイトルで検索...

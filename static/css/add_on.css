@@ -57,3 +57,13 @@ button#menu-button {
 .updated-icon {
     height: 1.1em;
 }
+
+/* フッター */
+[role="contentinfo"] img {
+    height: 1rem;
+    vertical-align: middle;
+    margin-top: 0;
+}
+[role="contentinfo"] div {
+    margin-bottom: 20px;
+}

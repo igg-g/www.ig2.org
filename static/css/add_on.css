@@ -10,3 +10,14 @@ button#menu-button {
     /* border: 0; */
     border: 2px solid #000;
 }
+
+.logo_img_only {
+    width: 125px;
+    display: inline-block;
+    margin-right: 100px;
+    animation: r1 3s linear infinite;
+}
+@keyframes r1 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

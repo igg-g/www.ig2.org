@@ -3,7 +3,7 @@ languageCode: ja-jp
 defaultContentLanguage: ja
 title: IGLOG
 theme: cupper-hugo-theme
-# googleAnalytics: UA-123456789-1
+googleAnalytics: UA-173566269-1
 # disqusShortname: yourdiscussshortname
 enableGitInfo: true
 

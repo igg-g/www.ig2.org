@@ -7,6 +7,8 @@ theme: cupper-hugo-theme
 # disqusShortname: yourdiscussshortname
 enableGitInfo: true
 
+publishDir: docs
+
 taxonomies:
   tag: tags
 

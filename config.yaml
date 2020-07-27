@@ -36,6 +36,8 @@ params:
   # customCss:
   #   - css/foo.css # relative path starting from static/
   #- css/bar.css
+  customCss:
+    - css/add_on.css
 
 menu:
   nav:

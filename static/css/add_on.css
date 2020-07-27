@@ -1,11 +1,114 @@
 @charset "utf-8";
 
+/* フォント */
 html h1, h2, h3, h4  {
     /* font-family: 'Segoe UI','Helvetica','Helvetica Neue','Arial',YuGothic,'Yu Gothic','メイリオ', Meiryo,sans-serif; */
     font-family: 'Helvetica Neue', 'Arial', 'YuGothic', 'Yu Gothic', '游ゴシック体', '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'MS ゴシック', 'MS Gothic', 'sans-serif';
 }
 code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+html {
+    font-size: calc(1em);
+    line-height: 1.7;
+}
+p + p {
+    margin-top: 1.5em;
+}
+
+.intro-and-nav {
+    font-size: 1rem;
+}
+.main-and-footer > div {
+    max-width: 67rem;
+    padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    body a {
+      hyphens: auto;
+    }
+    [role="banner"] {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    .intro {
+        text-align: center;
+    }
+    .intro-and-nav {
+        border-right: none;
+    }
+    .intro-and-nav > div {
+        padding: 1.5rem;
+    }
+    .main-and-footer {
+        margin: 0;
+    }
+    main {
+      min-height: auto;
+    }
+    #patterns-list {
+      margin-top: 0.5rem;
+      border: 1px solid;
+    }
+    .patterns h3 {
+        font-size: 1.5rem;
+        padding: 1.5rem 1rem 0.75rem;
+    }
+    .patterns li:not(.pattern) {
+        margin-top: 0;
+    }
+    .patterns ul ul {
+        margin: 0;
+    }
+    .patterns li {
+        margin-top: 0;
+    }
+    .pattern {
+        font-size: 1rem;
+    }
+    .pattern a {
+        padding: 1rem;
+    }
+    .pattern [aria-current] {
+        clip-path: none;
+        padding: 1rem;
+    }
+    .pattern + .pattern {
+        border-top: 1px solid;
+        margin-top: 0;
+    }
+    #menu-button {
+        display: block;
+    }
+    #patterns-list {
+        display: none;
+    }
+    .toc-link {
+      display: none;
+    }
+    [aria-expanded="true"] + #patterns-list {
+        display: block;
+    }
+    code {
+      word-break: break-all;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-and-footer > div {
+        padding: 30px;
+    }
+    .link-icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .main-and-footer > div {
+        padding: 10px;
+    }
 }
 
 input#search, button#menu-button {

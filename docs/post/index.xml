@@ -11,6 +11,38 @@
     
     
     <item>
+      <title>html2canvasをつかってコラ画像生成アプリをつくってみた</title>
+      <link>https://www.ig2.org/oicollamaker/</link>
+      <pubDate>Mon, 27 Jul 2020 22:50:45 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/oicollamaker/</guid>
+      <description>つくったもの Oicollamaker（GitHubはこちら）
+できました。明治おいしい牛乳 のパッケージのコラージュ画像を生成できるアプリです。
+Q.　こんなアプリだれがつかうんですか？
+A.　知りません。
+Q.　スマホにも対応していますか？
+A.　完全非対応です。
+なぜつくったか JavaScriptでDOMを操作する方法を学び、何かをつくりたくなったからです。
+html2canvas 明治おいしい牛乳（以下「おい牛」という）のパッケージ部分はHTMLでできています。 そのため右クリックで保存することができません。
+もちろんスクショを撮ってトリミングすれば保存できますが、ちょっとめんどうです。
+そこで、おい牛のパッケージ部分を画像化する機能をつけてみました。 その部分ではhtml2canvasというJavaScriptのライブラリを利用しています。
+公式サイトはこちら: html2canvas - Screenshots with JavaScript
+つかいかたは至ってかんたんです。 たとえばHTML内の画像化したい要素にtargetというidをつけておいて、
+html2canvas(document.getElementById(&amp;quot;target&amp;quot;)).then(canvas =&amp;gt; { document.body.appendChild(canvas); });  という魔法を唱えると、targetの内容が描画されたcanvasをbodyの子要素として追加することができます。
+問題点 肝心のおい牛パッケージを画像化する機能ですが、いろいろと問題があります。
+たとえば、
+これをhtml2canvasで画像化すると・・
+こうなります。
+ヨとグのあいだの長音符（のばし棒）の向きがおかしいですね。 おそらくhtml2canvasが縦書きのテキストに対応していないのでしょう。
+また、画面最上部からいくらか下にスクロールした状態でボタンを押して画像化を実行すると・・
+このように、スクロールした分だけ下にずれた画像が生成されてしまいます。 このバグはなんとかしたら直せそうなので、気が向いたらやってみようとおもいます。
+工夫した点 はじめは、input要素をHTMLに直接記述することで入力用のテキストボックスを設置していました。
+&amp;lt;form&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; placeholder=&amp;quot;明治&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; placeholder=&amp;quot;おいしい牛乳&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; placeholder=&amp;quot;ナチュラルテイスト製法&amp;quot;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;section&amp;gt; &amp;lt;div class=&amp;quot;output&amp;quot;&amp;gt;明治&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;output&amp;quot;&amp;gt;おいしい牛乳&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;output&amp;quot;&amp;gt;ナチュラルテイスト製法&amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  こんなかんじです（コードは説明のために簡略化しています）。
+このうえでJavaScriptを次のように書いていました。
+const inputs = document.</description>
+    </item>
+    
+    <item>
       <title>Multiple Expandable Test</title>
       <link>https://www.ig2.org/multiple-expandable-test/</link>
       <pubDate>Wed, 17 Jun 2020 22:01:14 -0500</pubDate>

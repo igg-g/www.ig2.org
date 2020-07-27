@@ -25,6 +25,30 @@
           {{ .Title }}
         </a>
       </h2>
+      <span class="date">
+        {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+        {{ $publishDate := .PublishDate }}
+        <!-- <strong>{{ T "publish_date" }} </strong> -->
+        <img class="created-icon" src="{{ "images/schedule-24px.svg" | absURL }}">
+        {{ $publishDate.Format $dateFormat }}
+      </span>
+  
+      {{ with .Params.tags }}
+        <span class="tags">
+          <!-- <strong>{{ T "tags" }} </strong> -->
+          <ul aria-label="{{ T "aria_label_tags" }}">
+            {{ range . }}
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
+                <a href="{{ $href }}">{{ . }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </span>
+      {{ end }}
     </li>
     {{ end }}
   </ul>

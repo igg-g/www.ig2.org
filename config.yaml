@@ -24,7 +24,7 @@ params:
   # homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
   homeMetaContent: 落ちこぼれ大学院生のテキトーブログ
   footer: "&copy; 2020 igg
-    [![github icon](images/github_icon.svg)](https://github.com/igg-g)<br>
+    [![github icon](https://www.ig2.org/images/github_icon.svg)](https://github.com/igg-g)<br>
     Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)."
   # For more date formats see https://gohugo.io/functions/format/
   # dateFormat: Jan 2, 2006

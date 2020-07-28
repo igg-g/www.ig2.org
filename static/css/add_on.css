@@ -1,5 +1,36 @@
 @charset "utf-8";
 
+/* 文字色 */
+*, *::before, *::after {
+    color: #222;
+}
+a {
+    color: #06c;
+}
+.patterns-list a {
+    color: inherit;
+}
+
+.intro-and-nav {
+    border-right: 1px solid #bec0c0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #bec0c0;
+    box-shadow: 0 0 1px rgba(34,34,34,.08);
+}
+
+.patterns-list li + li {
+    border-top: 1px solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ced0d0;
+}
+
+/* ナビゲーションメニュー選択時の色 */
+.pattern [aria-current] {
+    background-color: #eef0f0;
+}
+
 /* フォント */
 html h1, h2, h3, h4  {
     /* font-family: 'Segoe UI','Helvetica','Helvetica Neue','Arial',YuGothic,'Yu Gothic','メイリオ', Meiryo,sans-serif; */
@@ -107,15 +138,21 @@ p + p {
 }
 @media screen and (max-width: 414px) {
     .main-and-footer > div {
-        padding: 10px;
+        padding: 12px;
     }
     li svg.bookmark {
         margin-right: 0;
     }
 }
 
+button {
+    background: #fff;
+}
+
 input#search, button#menu-button {
     font-size: 1rem;
+    border-width: 1px;
+    border-radius: 1px;
 }
 
 button#menu-button {
@@ -123,13 +160,12 @@ button#menu-button {
     border-radius: 0.33em;
     font-family: inherit;
     /* background: #111; */
-    background: #fff;
     /* color: #fefefe; */
     color: #111;
     /* padding: 0.75rem; */
     padding: 0.5rem;
     /* border: 0; */
-    border: 2px solid #000;
+    border: 1px solid #000;
     font-weight: bold;
 }
 
@@ -198,4 +234,25 @@ button#menu-button {
 .title-and-dm-button > h1 {
     display: inline-block;
     margin-right: 7rem;
+}
+
+pre, nav.toc, pre[class*=language-] {
+    background: #f4f6f6;
+}
+
+nav.toc * {
+    color: #787c7b;
+    list-style: none;
+    margin-left: 0;
+}
+
+pre, .file-tree, nav.toc {
+    border: none;
+}
+
+.token.punctuation {
+    color: #666;
+}
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+    background: none;
 }

@@ -233,7 +233,7 @@ button#menu-button {
 }
 .title-and-dm-button > h1 {
     display: inline-block;
-    margin-right: 7rem;
+    /* margin-right: 7rem; */
 }
 
 pre, nav.toc, pre[class*=language-] {

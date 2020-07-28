@@ -1,7 +1,7 @@
 {{ define "main" }}
   <main id="main">
     {{/* 無理やり日本語化 */}}
-    <div class="title-and-dm-button"><h1>タグ一覧</h1>{{ partial "dark_mode.html" . }}</div>
+    <h1>タグ一覧</h1>
     <ul class="patterns-list">
       {{ range .Data.Terms.Alphabetical }}
         <li>

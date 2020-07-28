@@ -6,10 +6,25 @@
     <description>Recent content in hugo on IGLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 19:23:43 +0900</lastBuildDate>
     
 	<atom:link href="https://www.ig2.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo と GitHub Pages でかわいいブログつくったよ☆</title>
+      <link>https://www.ig2.org/made_hugo_blog/</link>
+      <pubDate>Tue, 28 Jul 2020 19:23:43 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/made_hugo_blog/</guid>
+      <description>こんにちは、igg です。
+この度 Hugo という静的サイトジェネレーターをつかってこちらのブログををつくってみました。
+ 回転する人  ホスティング先は GitHub Pages です。
+また、せっかくなので Amazon Route 53 で ig2.org という独自ドメインを取得してサブドメインの www.ig2.org を割り当ててみました。
+それぞれのサービスを採用した理由は次のとおりです。
+   サービス 採用した理由     Hugo なんかめっちゃ速いらしいので。   GitHub Pages 利用したことがあったため。   Amazon Route 53 AWS のアカウントをすでに持っていたため。クレカも（強制的に）登録済みだし。    ブログの作成についてとくにハマったところはなく、特段の知見も得られなかったのですが、一応作業ログを残しておこうと思います。
+作業環境  macOS Catalina (10.15.6) zsh 5.7.1 Homebrew 2.4.8 Git 2.27.0  前提  GitHub アカウントを持っている AWS アカウントも持っている  参考にしたサイト  Quick Start | Hugo Hugoを導入してWebサイトをGitHub Pagesで公開してみた話 - Qiita  Amazon Route 53 で独自ドメインを取得する とりあえず独自ドメインをとっちゃいましょう。</description>
+    </item>
     
     <item>
       <title>Katex Math Typesetting</title>

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on IGLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 27 Jul 2020 22:50:45 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 19:23:43 +0900</lastBuildDate>
     
 	<atom:link href="https://www.ig2.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo</title>
+      <link>https://www.ig2.org/tags/hugo/</link>
+      <pubDate>Tue, 28 Jul 2020 19:23:43 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>作業ログ</title>
+      <link>https://www.ig2.org/tags/%E4%BD%9C%E6%A5%AD%E3%83%AD%E3%82%B0/</link>
+      <pubDate>Tue, 28 Jul 2020 19:23:43 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/tags/%E4%BD%9C%E6%A5%AD%E3%83%AD%E3%82%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>書きかけ</title>
+      <link>https://www.ig2.org/tags/%E6%9B%B8%E3%81%8D%E3%81%8B%E3%81%91/</link>
+      <pubDate>Tue, 28 Jul 2020 19:23:43 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/tags/%E6%9B%B8%E3%81%8D%E3%81%8B%E3%81%91/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>html2canvas</title>
@@ -17,15 +44,6 @@
       <pubDate>Mon, 27 Jul 2020 22:50:45 +0900</pubDate>
       
       <guid>https://www.ig2.org/tags/html2canvas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://www.ig2.org/tags/hugo/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ig2.org/tags/hugo/</guid>
       <description></description>
     </item>
     

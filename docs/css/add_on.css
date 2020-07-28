@@ -257,3 +257,17 @@ pre, .file-tree, nav.toc {
 .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
     background: none;
 }
+
+blockquote {
+    border-left: 5px solid #ddd;
+    color: #666;
+    margin: 1em 0;
+}
+
+blockquote p {
+    color: inherit;
+}
+
+th, td {
+    border-width: 1px;
+}

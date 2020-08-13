@@ -3,31 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.ig2.org/tags/hugo/</loc>
-    <lastmod>2020-07-28T19:23:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.ig2.org/made_hugo_blog/</loc>
-    <lastmod>2020-07-28T19:23:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.ig2.org/tags/</loc>
-    <lastmod>2020-07-28T19:23:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.ig2.org/tags/%E4%BD%9C%E6%A5%AD%E3%83%AD%E3%82%B0/</loc>
-    <lastmod>2020-07-28T19:23:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.ig2.org/tags/%E6%9B%B8%E3%81%8D%E3%81%8B%E3%81%91/</loc>
-    <lastmod>2020-07-28T19:23:43+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.ig2.org/tags/html2canvas/</loc>
     <lastmod>2020-07-27T23:40:17+09:00</lastmod>
   </url>
@@ -35,6 +10,16 @@
   <url>
     <loc>https://www.ig2.org/oicollamaker/</loc>
     <lastmod>2020-07-27T23:40:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ig2.org/tags/</loc>
+    <lastmod>2020-07-27T23:40:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ig2.org/tags/hugo/</loc>
+    <lastmod>2020-07-27T14:01:59+09:00</lastmod>
   </url>
   
   <url>

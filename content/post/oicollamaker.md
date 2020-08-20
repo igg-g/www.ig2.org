@@ -1,7 +1,7 @@
 ---
 title: "html2canvasをつかってコラ画像生成アプリをつくってみた"
 date: 2020-07-27T22:50:45+09:00
-draft: false
+draft: true
 tags: ["html2canvas"]
 ---
 ## つくったもの

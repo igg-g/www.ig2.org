@@ -1,7 +1,7 @@
 baseURL: https://www.ig2.org
 languageCode: ja-jp
 defaultContentLanguage: ja
-title: IGLOG
+title: obメモ
 theme: cupper-hugo-theme
 googleAnalytics: UA-173566269-1
 # disqusShortname: yourdiscussshortname
@@ -20,12 +20,10 @@ imaging:
 
 params:
   # description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
-  description: 落ちこぼれ大学院生のテキトーブログ
+  description: obcat のメモおきば
   # homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
-  homeMetaContent: 落ちこぼれ大学院生のテキトーブログ
-  footer: "&copy; 2020 igg
-    [![github icon](https://www.ig2.org/images/github_icon.svg)](https://github.com/obcat)<br>
-    Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://themes.gohugo.io/cupper-hugo-theme/)."
+  homeMetaContent: obcat のメモおきば
+  footer: "&copy; 2020 obcat [![github icon](https://www.ig2.org/images/github_icon.svg)](https://github.com/obcat)"
   # For more date formats see https://gohugo.io/functions/format/
   # dateFormat: Jan 2, 2006
   dateFormat: 2006-01-02
@@ -50,7 +48,7 @@ menu:
     - name: ホーム
       url: /
       weight: 1
-    - name: ブログ
+    - name: メモ一覧
       url: /post/
       weight: 2
     - name: タグ一覧

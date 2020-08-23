@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>メモ一覧 on obメモ</title>
-    <link>https://www.ig2.org/post/</link>
-    <description>Recent content in メモ一覧 on obメモ</description>
+    <title>Git on obメモ</title>
+    <link>https://www.ig2.org/tags/git/</link>
+    <description>Recent content in Git on obメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <lastBuildDate>Fri, 21 Aug 2020 00:02:36 +0900</lastBuildDate>
     
-	<atom:link href="https://www.ig2.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ig2.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>tmux メモ</title>
-      <link>https://www.ig2.org/tmux/</link>
-      <pubDate>Sat, 22 Aug 2020 04:57:28 +0900</pubDate>
-      
-      <guid>https://www.ig2.org/tmux/</guid>
-      <description>コマンドラインから    コマンド 説明     tmux [new] 新しいセッションを作成してアタッチ   tmux new -s &amp;lt;session-name&amp;gt; 新しいセッションを指定した名前で作成しアタッチ   tmux ls すべてのセッションを一覧表示   tmux a [-t &amp;lt;session-name&amp;gt;] 指定したセッションにアタッチ。-t オプションを省略したときは最後にデタッチしたセッションにアタッチする（？）   tmux kill-server すべてのセッションを破棄し tmux サーバーを終了    tmux 内部から 　以下のコマンドはプレフィックスキーに続けて入力するもの。
-ペイン    コマンド 説明     % 現在のペインを左右に分割   &amp;quot; 現在のペインを上下に分割   x 現在のペインを強制終了。コマンドラインで $ exit するほうが安全   q ペイン番号をすこしのあいだ表示   o ペイン番号が 1 大きいペインに移動    ウィンドウ    コマンド 説明     c 新しいウィンドウを作成   , 現在のウィンドウの名前を変更する   n ウィンドウ番号が 1 大きいウィンドウに移動   p ウィンドウ番号が 1 小さいウィンドウに移動   w 対話的にウィンドウを選択   &amp;amp; 現在のウィンドウを強制終了。すべてのペインで $ exit するほうが安全    セッション    コマンド 説明     $ 現在のセッションの名前を変更    </description>
-    </item>
     
     <item>
       <title>Git メモ</title>

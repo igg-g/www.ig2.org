@@ -2,7 +2,7 @@
 title: GitHub メモ
 date: 2020-08-20T23:32:17+09:00
 tags: ["GitHub", "Git"]
-draft: true
+draft: false
 ---
 
 ## 二段階認証設定後に HTTP でプッシュする方法

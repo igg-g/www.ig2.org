@@ -1,7 +1,7 @@
 ---
 title: "Git メモ"
 date: 2020-08-21T00:02:36+09:00
-draft: true
+draft: false
 tags: ["Git"]
 ---
 

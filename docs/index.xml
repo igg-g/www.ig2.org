@@ -11,5 +11,46 @@
 	<atom:link href="https://www.ig2.org/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>tmux メモ</title>
+      <link>https://www.ig2.org/tmux/</link>
+      <pubDate>Sat, 22 Aug 2020 04:57:28 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/tmux/</guid>
+      <description>コマンドラインから    コマンド 説明     tmux [new] 新しいセッションを作成してアタッチ   tmux new -s &amp;lt;session-name&amp;gt; 新しいセッションを指定した名前で作成しアタッチ   tmux ls すべてのセッションを一覧表示   tmux a [-t &amp;lt;session-name&amp;gt;] 指定したセッションにアタッチ。-t オプションを省略したときは最後にデタッチしたセッションにアタッチする（？）   tmux kill-server すべてのセッションを破棄し tmux サーバーを終了    tmux 内部から 　以下のコマンドはプレフィックスキーに続けて入力するもの。
+ペイン    コマンド 説明     % 現在のペインを左右に分割   &amp;quot; 現在のペインを上下に分割   x 現在のペインを強制終了。コマンドラインで $ exit するほうが安全   q ペイン番号をすこしのあいだ表示   o ペイン番号が 1 大きいペインに移動    ウィンドウ    コマンド 説明     c 新しいウィンドウを作成   , 現在のウィンドウの名前を変更する   n ウィンドウ番号が 1 大きいウィンドウに移動   p ウィンドウ番号が 1 小さいウィンドウに移動   w 対話的にウィンドウを選択   &amp;amp; 現在のウィンドウを強制終了。すべてのペインで $ exit するほうが安全    セッション    コマンド 説明     $ 現在のセッションの名前を変更    </description>
+    </item>
+    
+    <item>
+      <title>Git メモ</title>
+      <link>https://www.ig2.org/git/</link>
+      <pubDate>Fri, 21 Aug 2020 00:02:36 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/git/</guid>
+      <description>有用なリンク  Git - Book GitHub Git チートシート - GitHub Cheatsheets  ブランチ 　ブランチとはあるコミットを指し示すポインタのこと。コミットの集合をブランチとよぶのはあやまり。
+HEAD 　HEAD とはブランチまたはコミットを指し示すポインタのこと。 メタ的には「現在作業している場所」を指し示すものと解釈される。
+detached HEAD 状態 　HEAD が detached HEAD 状態であるとは、HEAD が指し示すものがブランチでなくコミットであるときをいう。
+この状態のときに Git の何らかの処理を行うと、通常とは違う結果をもたらすことがある。たとえば、HEAD が detached HEAD 状態のときに何度かコミットしてから別のブランチまたはコミットにチェックアウトすると、将来自動的に行われる（または手動で行う）garbage collection という処理によってそれらのコミットはすべて破棄される。
+ Git の &amp;lsquo;detached HEAD&amp;rsquo; 状態とその注意点 - yu8mada  </description>
+    </item>
+    
+    <item>
+      <title>GitHub メモ</title>
+      <link>https://www.ig2.org/github/</link>
+      <pubDate>Thu, 20 Aug 2020 23:32:17 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/github/</guid>
+      <description>二段階認証設定後に HTTP でプッシュする方法 　自分の GitHub ページでパーソナルアクセストークンを取得する必要がある。 コマンドラインで入力するパスワードは、GitHub アカウントのパスワードではなく取得したパーソナルアクセストークン。
+  リモートの URL の変更 - GitHub Docs
+ 2要素認証 を有効にしている場合は、パーソナルアクセストークンを作成して、GitHub パスワードのかわりに使用することができます。
+ 「使用することができます」ではなく「使用しなくてはなりません」が正しいのでは。
+  個人アクセストークンを使用する - GitHub Docs
+  GitHub Error: Authentication Failed from the Command Line | by Ginny Fahs | Medium
+  GitHubに二段階認証を設定した後にGit操作できない時の解決策 - Qiita
+ repoからgistまでを全てチェックしてGenerate token
+ プッシュするだけなら repo だけでよい。
+  </description>
+    </item>
+    
   </channel>
 </rss>

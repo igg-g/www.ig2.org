@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on obメモ</title>
+    <link>https://www.ig2.org/tags/github/</link>
+    <description>Recent content in GitHub on obメモ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 20 Aug 2020 23:32:17 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.ig2.org/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GitHub メモ</title>
+      <link>https://www.ig2.org/github/</link>
+      <pubDate>Thu, 20 Aug 2020 23:32:17 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/github/</guid>
+      <description>二段階認証設定後に HTTP でプッシュする方法 　自分の GitHub ページでパーソナルアクセストークンを取得する必要がある。 コマンドラインで入力するパスワードは、GitHub アカウントのパスワードではなく取得したパーソナルアクセストークン。
+  リモートの URL の変更 - GitHub Docs
+ 2要素認証 を有効にしている場合は、パーソナルアクセストークンを作成して、GitHub パスワードのかわりに使用することができます。
+ 「使用することができます」ではなく「使用しなくてはなりません」が正しいのでは。
+  個人アクセストークンを使用する - GitHub Docs
+  GitHub Error: Authentication Failed from the Command Line | by Ginny Fahs | Medium
+  GitHubに二段階認証を設定した後にGit操作できない時の解決策 - Qiita
+ repoからgistまでを全てチェックしてGenerate token
+ プッシュするだけなら repo だけでよい。
+  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.74.2" />
-  <link rel="canonical" href="https://www.ig2.org/post/">
+  <link rel="canonical" href="https://www.ig2.org/github/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>メモ一覧 | obメモ</title>
+  <title>GitHub メモ | obメモ</title>
 </head>
 
   <body>
@@ -172,7 +172,7 @@
       
       
       
-      <a href="/post/" aria-current="page">
+      <a href="/post/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -201,148 +201,93 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>メモ一覧</h1>
-  
-  <input
-    id="search"
-    type="text"
-    placeholder="タイトルで検索..."
-    aria-label="タイトルで検索..."
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="https://www.ig2.org/tmux/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          tmux メモ
-        </a>
-      </h2>
-      <span class="date">
-        
-        
-        
-        <img class="created-icon" src="https://www.ig2.org/images/schedule-24px.svg">
-        2020-08-22
-      </span>
-  
-      
-        <span class="tags">
-          
-          <ul aria-label="タグ">
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      GitHub メモ
+    </h1>
+
+    <div class="date-and-tags">
+        <span class="date">
             
-              <li>
-                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                  <use xlink:href="#tag"></use>
-                </svg>
+            
+            
+            <img class="created-icon" src="https://www.ig2.org/images/schedule-24px.svg">
+            2020-08-20
+            
+            
                 
-                <a href="https://www.ig2.org/tags/tmux/">tmux</a>
-              </li>
+                
+                <img class="updated-icon" src="https://www.ig2.org/images/update-black-18dp.svg">
+                2020-08-23
             
-          </ul>
+            
         </span>
-      
-    </li>
+
+        
+            <span class="tags">
+            
+            <ul aria-label="タグ">
+                
+                <li>
+                    <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                    <use xlink:href="#tag"></use>
+                    </svg>
+                    
+                    <a href="https://www.ig2.org/tags/github/">GitHub</a>
+                </li>
+                
+                <li>
+                    <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                    <use xlink:href="#tag"></use>
+                    </svg>
+                    
+                    <a href="https://www.ig2.org/tags/git/">Git</a>
+                </li>
+                
+            </ul>
+            </span>
+        
+      </div>
     
-    <li>
-      <h2>
-        <a href="https://www.ig2.org/git/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Git メモ
-        </a>
-      </h2>
-      <span class="date">
-        
-        
-        
-        <img class="created-icon" src="https://www.ig2.org/images/schedule-24px.svg">
-        2020-08-21
-      </span>
+      
+
+
+    
+
+    <h2 id="二段階認証設定後に-http-でプッシュする方法">二段階認証設定後に HTTP でプッシュする方法</h2>
+<p>　自分の GitHub ページでパーソナルアクセストークンを取得する必要がある。
+コマンドラインで入力するパスワードは、GitHub アカウントのパスワードではなく取得したパーソナルアクセストークン。</p>
+<ul>
+<li>
+<p><a href="https://docs.github.com/ja/github/using-git/changing-a-remotes-url#switching-remote-urls-from-ssh-to-https">リモートの URL の変更 - GitHub Docs</a></p>
+<blockquote>
+<p>2要素認証 を有効にしている場合は、パーソナルアクセストークンを作成して、GitHub パスワードのかわりに使用することができます。</p>
+</blockquote>
+<p>「使用することができます」ではなく「使用しなくてはなりません」が正しいのでは。</p>
+</li>
+<li>
+<p><a href="https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token">個人アクセストークンを使用する - GitHub Docs</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8">GitHub Error: Authentication Failed from the Command Line | by Ginny Fahs | Medium</a></p>
+</li>
+<li>
+<p><a href="https://qiita.com/kitoko552/items/3f45de6c876c638b690d">GitHubに二段階認証を設定した後にGit操作できない時の解決策 - Qiita</a></p>
+<blockquote>
+<p>repoからgistまでを全てチェックしてGenerate token</p>
+</blockquote>
+<p>プッシュするだけなら repo だけでよい。</p>
+</li>
+</ul>
+
+  </main>
+  <div id="disqus-container">
   
-      
-        <span class="tags">
-          
-          <ul aria-label="タグ">
-            
-              <li>
-                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                  <use xlink:href="#tag"></use>
-                </svg>
-                
-                <a href="https://www.ig2.org/tags/git/">Git</a>
-              </li>
-            
-          </ul>
-        </span>
-      
-    </li>
-    
-    <li>
-      <h2>
-        <a href="https://www.ig2.org/github/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          GitHub メモ
-        </a>
-      </h2>
-      <span class="date">
-        
-        
-        
-        <img class="created-icon" src="https://www.ig2.org/images/schedule-24px.svg">
-        2020-08-20
-      </span>
-  
-      
-        <span class="tags">
-          
-          <ul aria-label="タグ">
-            
-              <li>
-                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                  <use xlink:href="#tag"></use>
-                </svg>
-                
-                <a href="https://www.ig2.org/tags/github/">GitHub</a>
-              </li>
-            
-              <li>
-                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                  <use xlink:href="#tag"></use>
-                </svg>
-                
-                <a href="https://www.ig2.org/tags/git/">Git</a>
-              </li>
-            
-          </ul>
-        </span>
-      
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           <footer role="contentinfo">
   

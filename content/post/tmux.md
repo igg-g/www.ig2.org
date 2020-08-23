@@ -1,7 +1,7 @@
 ---
 title: "tmux メモ"
 date: 2020-08-22T04:57:28+09:00
-draft: true
+draft: false
 tags: ["tmux"]
 ---
 

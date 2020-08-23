@@ -1,78 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on IGLOG</title>
+    <title>タグ一覧 on obメモ</title>
     <link>https://www.ig2.org/tags/</link>
-    <description>Recent content in Tags on IGLOG</description>
+    <description>Recent content in タグ一覧 on obメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 27 Jul 2020 22:50:45 +0900</lastBuildDate>
     
 	<atom:link href="https://www.ig2.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>html2canvas</title>
-      <link>https://www.ig2.org/tags/html2canvas/</link>
-      <pubDate>Mon, 27 Jul 2020 22:50:45 +0900</pubDate>
-      
-      <guid>https://www.ig2.org/tags/html2canvas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://www.ig2.org/tags/hugo/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ig2.org/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>katex</title>
-      <link>https://www.ig2.org/tags/katex/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ig2.org/tags/katex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://www.ig2.org/tags/math/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ig2.org/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>typesetting</title>
-      <link>https://www.ig2.org/tags/typesetting/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ig2.org/tags/typesetting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://www.ig2.org/tags/markdown/</link>
-      <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
-      
-      <guid>https://www.ig2.org/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://www.ig2.org/tags/shortcodes/</link>
-      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
-      
-      <guid>https://www.ig2.org/tags/shortcodes/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

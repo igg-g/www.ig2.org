@@ -5,7 +5,14 @@ draft: false
 tags: ["Git"]
 ---
 
+## 所感
+
+　Git を使いこなすためには Git の内部構造を理解することが必要不可欠。
+
 ## 有用なリンク
+
+- [[To Be Decided ~]$ find /tags/git/](https://www.kaitoy.xyz/tags/git/)  
+    Git の内部構造を図を用いてわかりやすく解説している。各種コマンドの機能についても内部構造にもとづいた説明がなされており大変わかりやすい。古い記事から順にひと通り目を通すとよい。
 
 - [Git - Book](https://git-scm.com/book/ja/v2)
 - [GitHub Git チートシート - GitHub Cheatsheets](https://github.github.com/training-kit/downloads/ja/github-git-cheat-sheet/)

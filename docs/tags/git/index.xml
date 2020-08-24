@@ -17,7 +17,12 @@
       <pubDate>Fri, 21 Aug 2020 00:02:36 +0900</pubDate>
       
       <guid>https://www.ig2.org/git/</guid>
-      <description>有用なリンク  Git - Book GitHub Git チートシート - GitHub Cheatsheets  ブランチ 　ブランチとはあるコミットを指し示すポインタのこと。コミットの集合をブランチとよぶのはあやまり。
+      <description>所感 　Git を使いこなすためには Git の内部構造を理解することが必要不可欠。
+有用なリンク   [To Be Decided ~]$ find /tags/git/
+Git の内部構造を図を用いてわかりやすく解説している。各種コマンドの機能についても内部構造にもとづいた説明がなされており大変わかりやすい。古い記事から順にひと通り目を通すとよい。
+  Git - Book
+  GitHub Git チートシート - GitHub Cheatsheets
+  ブランチ 　ブランチとはあるコミットを指し示すポインタのこと。コミットの集合をブランチとよぶのはあやまり。
 HEAD 　HEAD とはブランチまたはコミットを指し示すポインタのこと。 メタ的には「現在作業している場所」を指し示すものと解釈される。
 detached HEAD 状態 　HEAD が detached HEAD 状態であるとは、HEAD が指し示すものがブランチでなくコミットであるときをいう。
 この状態のときに Git の何らかの処理を行うと、通常とは違う結果をもたらすことがある。たとえば、HEAD が detached HEAD 状態のときに何度かコミットしてから別のブランチまたはコミットにチェックアウトすると、将来自動的に行われる（または手動で行う）garbage collection という処理によってそれらのコミットはすべて破棄される。

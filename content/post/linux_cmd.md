@@ -150,3 +150,27 @@ $ jobs
 ## プロセス
 
 　システムから見た実行中のプログラムを**プロセス**という。
+
+## 基本コマンド
+
+### キーワードでmanページを検索する
+
+```
+$ apropos キーワード
+```
+
+#### 例
+
+```
+$ apropos editor
+ed(1), red(1)            - text editor
+mg(1)                    - emacs-like text editor
+nano(1)                  - Nano's ANOther editor, an enhanced free Pico clone
+pdisk(8)                 - Apple partition table editor
+psed(1)                  - a stream editor
+sed(1)                   - stream editor
+vim(1)                   - Vi IMproved, a programmer's text editor
+zshzle(1)                - zsh command line editor
+Mach-O(5)                - Mach-O assembler and link editor output
+```
+

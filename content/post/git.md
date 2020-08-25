@@ -1,5 +1,5 @@
 ---
-title: "Git メモ"
+title: "Git"
 date: 2020-08-21T00:02:36+09:00
 draft: false
 tags: ["Git"]
@@ -14,7 +14,10 @@ tags: ["Git"]
 - [[To Be Decided ~]$ find /tags/git/](https://www.kaitoy.xyz/tags/git/)  
     Git の内部構造を図を用いてわかりやすく解説している。各種コマンドの機能についても内部構造にもとづいた説明がなされており大変わかりやすい。古い記事から順にひと通り目を通すとよい。
 
+- [Git - Reference](https://git-scm.com/docs)
+    - [Git - gitglossary Documentation](https://git-scm.com/docs/gitglossary)
 - [Git - Book](https://git-scm.com/book/ja/v2)
+- [逆引きGit](https://backlog.com/ja/git-tutorial/reference/)
 - [GitHub Git チートシート - GitHub Cheatsheets](https://github.github.com/training-kit/downloads/ja/github-git-cheat-sheet/)
 
 ## ブランチ

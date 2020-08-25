@@ -1,5 +1,5 @@
 ---
-title: GitHub メモ
+title: GitHub
 date: 2020-08-20T23:32:17+09:00
 tags: ["GitHub", "Git"]
 draft: false

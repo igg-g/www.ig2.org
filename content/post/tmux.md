@@ -1,9 +1,13 @@
 ---
-title: "tmux メモ"
+title: "tmux"
 date: 2020-08-22T04:57:28+09:00
 draft: false
 tags: ["tmux"]
 ---
+
+　tmux は「ティマックス」と読む。「ティーマックス」ではない。  
+<audio src="http://www.howtopronounce.cc/file/303a2518c5924b609004e2604a2cd246.mp3" controls="controls" controlslist="nodownload">Your browser does not support the audio element.</audio>  
+（[How to pronounce Tmux: howtopronounce.cc](http://www.howtopronounce.cc/tmux) より）
 
 ## コマンドラインから
 

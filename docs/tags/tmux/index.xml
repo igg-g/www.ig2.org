@@ -12,12 +12,15 @@
     
     
     <item>
-      <title>tmux メモ</title>
+      <title>tmux</title>
       <link>https://www.ig2.org/tmux/</link>
       <pubDate>Sat, 22 Aug 2020 04:57:28 +0900</pubDate>
       
       <guid>https://www.ig2.org/tmux/</guid>
-      <description>コマンドラインから    コマンド 説明     tmux [new] 新しいセッションを作成してアタッチ   tmux new -s &amp;lt;session-name&amp;gt; 新しいセッションを指定した名前で作成しアタッチ   tmux ls すべてのセッションを一覧表示   tmux a [-t &amp;lt;session-name&amp;gt;] 指定したセッションにアタッチ。-t オプションを省略したときは最後にデタッチしたセッションにアタッチする（？）   tmux kill-server すべてのセッションを破棄し tmux サーバーを終了    tmux 内部から 　以下のコマンドはプレフィックスキーに続けて入力するもの。
+      <description>　tmux は「ティマックス」と読む。「ティーマックス」ではない。
+Your browser does not support the audio element.
+（How to pronounce Tmux: howtopronounce.cc より）
+コマンドラインから    コマンド 説明     tmux [new] 新しいセッションを作成してアタッチ   tmux new -s &amp;lt;session-name&amp;gt; 新しいセッションを指定した名前で作成しアタッチ   tmux ls すべてのセッションを一覧表示   tmux a [-t &amp;lt;session-name&amp;gt;] 指定したセッションにアタッチ。-t オプションを省略したときは最後にデタッチしたセッションにアタッチする（？）   tmux kill-server すべてのセッションを破棄し tmux サーバーを終了    tmux 内部から 　以下のコマンドはプレフィックスキーに続けて入力するもの。
 ペイン    コマンド 説明     % 現在のペインを左右に分割   &amp;quot; 現在のペインを上下に分割   x 現在のペインを強制終了。コマンドラインで $ exit するほうが安全   q ペイン番号をすこしのあいだ表示   o ペイン番号が 1 大きいペインに移動    ウィンドウ    コマンド 説明     c 新しいウィンドウを作成   , 現在のウィンドウの名前を変更する   n ウィンドウ番号が 1 大きいウィンドウに移動   p ウィンドウ番号が 1 小さいウィンドウに移動   w 対話的にウィンドウを選択   &amp;amp; 現在のウィンドウを強制終了。すべてのペインで $ exit するほうが安全    セッション    コマンド 説明     $ 現在のセッションの名前を変更    </description>
     </item>
     

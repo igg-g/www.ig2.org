@@ -12,17 +12,40 @@
     
     
     <item>
-      <title>tmux メモ</title>
+      <title>Linuxコマンド</title>
+      <link>https://www.ig2.org/linux_cmd/</link>
+      <pubDate>Tue, 25 Aug 2020 23:02:29 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/linux_cmd/</guid>
+      <description>ジョブ 　シェルから見た実行中のコマンドをジョブという。
+コマンドをバックグラウンドジョブとして実行する $ コマンド &amp;amp;  例 $ find . -size +100M &amp;gt; out.txt &amp;amp; [1] 10322  　[1]：ジョブ番号、10322：プロセスID
+実行中または一時停止中のジョブの一覧を表示する $ jobs  例 $ sleep 100 &amp;amp; [1] 10708 $ sleep 200 &amp;amp; [2] 10710 $ sleep 300 &amp;amp; [3] 10713 $ sleep 400 &amp;amp; [4] 10715 $ jobs [1] running sleep 100 [2] running sleep 200 [3] - running sleep 300 [4] + running sleep 400  　-：プリビアスジョブ、+：カレントジョブ</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://www.ig2.org/vim/</link>
+      <pubDate>Tue, 25 Aug 2020 01:13:29 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/vim/</guid>
+      <description>ノーマルモード    コマンド 説明     q: Exコマンドのコマンドラインウィンドウを開く   q/ または q? 検索コマンドのコマンドラインウィンドウを開く    再描画    コマンド 説明     zt 現在行を画面の１行目にする   zz 現在行を画面の中央にする   zb 現在行を画面の最下行にする    挿入モード    コマンド 説明     &amp;lt;C-o&amp;gt; １つコマンドを実行して挿入モードに戻る   &amp;lt;C-r&amp;gt;{register} 指定したレジスタの内容を挿入する    コマンドラインモード（;, /, ?）    コマンド 説明     &amp;lt;C-r&amp;gt;{register} 指定したレジスタの内容を挿入する   &amp;lt;C-f&amp;gt; ;, /, ?</description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
       <link>https://www.ig2.org/tmux/</link>
       <pubDate>Sat, 22 Aug 2020 04:57:28 +0900</pubDate>
       
       <guid>https://www.ig2.org/tmux/</guid>
-      <description>コマンドラインから    コマンド 説明     tmux [new] 新しいセッションを作成してアタッチ   tmux new -s &amp;lt;session-name&amp;gt; 新しいセッションを指定した名前で作成しアタッチ   tmux ls すべてのセッションを一覧表示   tmux a [-t &amp;lt;session-name&amp;gt;] 指定したセッションにアタッチ。-t オプションを省略したときは最後にデタッチしたセッションにアタッチする（？）   tmux kill-server すべてのセッションを破棄し tmux サーバーを終了    tmux 内部から 　以下のコマンドはプレフィックスキーに続けて入力するもの。
+      <description>　tmux は「ティマックス」と読む。「ティーマックス」ではない。
+Your browser does not support the audio element.
+（How to pronounce Tmux: howtopronounce.cc より）
+コマンドラインから    コマンド 説明     tmux [new] 新しいセッションを作成してアタッチ   tmux new -s &amp;lt;session-name&amp;gt; 新しいセッションを指定した名前で作成しアタッチ   tmux ls すべてのセッションを一覧表示   tmux a [-t &amp;lt;session-name&amp;gt;] 指定したセッションにアタッチ。-t オプションを省略したときは最後にデタッチしたセッションにアタッチする（？）   tmux kill-server すべてのセッションを破棄し tmux サーバーを終了    tmux 内部から 　以下のコマンドはプレフィックスキーに続けて入力するもの。
 ペイン    コマンド 説明     % 現在のペインを左右に分割   &amp;quot; 現在のペインを上下に分割   x 現在のペインを強制終了。コマンドラインで $ exit するほうが安全   q ペイン番号をすこしのあいだ表示   o ペイン番号が 1 大きいペインに移動    ウィンドウ    コマンド 説明     c 新しいウィンドウを作成   , 現在のウィンドウの名前を変更する   n ウィンドウ番号が 1 大きいウィンドウに移動   p ウィンドウ番号が 1 小さいウィンドウに移動   w 対話的にウィンドウを選択   &amp;amp; 現在のウィンドウを強制終了。すべてのペインで $ exit するほうが安全    セッション    コマンド 説明     $ 現在のセッションの名前を変更    </description>
     </item>
     
     <item>
-      <title>Git メモ</title>
+      <title>Git</title>
       <link>https://www.ig2.org/git/</link>
       <pubDate>Fri, 21 Aug 2020 00:02:36 +0900</pubDate>
       
@@ -30,17 +53,18 @@
       <description>所感 　Git を使いこなすためには Git の内部構造を理解することが必要不可欠。
 有用なリンク   [To Be Decided ~]$ find /tags/git/
 Git の内部構造を図を用いてわかりやすく解説している。各種コマンドの機能についても内部構造にもとづいた説明がなされており大変わかりやすい。古い記事から順にひと通り目を通すとよい。
-  Git - Book
+  Git - Reference
+ Git - gitglossary Documentation    Git - Book
+  逆引きGit
   GitHub Git チートシート - GitHub Cheatsheets
   ブランチ 　ブランチとはあるコミットを指し示すポインタのこと。コミットの集合をブランチとよぶのはあやまり。
 HEAD 　HEAD とはブランチまたはコミットを指し示すポインタのこと。 メタ的には「現在作業している場所」を指し示すものと解釈される。
 detached HEAD 状態 　HEAD が detached HEAD 状態であるとは、HEAD が指し示すものがブランチでなくコミットであるときをいう。
-この状態のときに Git の何らかの処理を行うと、通常とは違う結果をもたらすことがある。たとえば、HEAD が detached HEAD 状態のときに何度かコミットしてから別のブランチまたはコミットにチェックアウトすると、将来自動的に行われる（または手動で行う）garbage collection という処理によってそれらのコミットはすべて破棄される。
- Git の &amp;lsquo;detached HEAD&amp;rsquo; 状態とその注意点 - yu8mada  </description>
+この状態のときに Git の何らかの処理を行うと、通常とは違う結果をもたらすことがある。たとえば、HEAD が detached HEAD 状態のときに何度かコミットしてから別のブランチまたはコミットにチェックアウトすると、将来自動的に行われる（または手動で行う）garbage collection という処理によってそれらのコミットはすべて破棄される。</description>
     </item>
     
     <item>
-      <title>GitHub メモ</title>
+      <title>GitHub</title>
       <link>https://www.ig2.org/github/</link>
       <pubDate>Thu, 20 Aug 2020 23:32:17 +0900</pubDate>
       

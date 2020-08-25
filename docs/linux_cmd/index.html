@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.74.2" />
-  <link rel="canonical" href="https://www.ig2.org/git/">
+  <link rel="canonical" href="https://www.ig2.org/linux_cmd/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>Git | obメモ</title>
+  <title>Linuxコマンド | obメモ</title>
 </head>
 
   <body>
@@ -206,7 +206,7 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      Git
+      Linuxコマンド
     </h1>
 
     <div class="date-and-tags">
@@ -215,7 +215,7 @@
             
             
             <img class="created-icon" src="https://www.ig2.org/images/schedule-24px.svg">
-            2020-08-21
+            2020-08-25
             
             
                 
@@ -236,7 +236,7 @@
                     <use xlink:href="#tag"></use>
                     </svg>
                     
-                    <a href="https://www.ig2.org/tags/git/">Git</a>
+                    <a href="https://www.ig2.org/tags/linux/">Linux</a>
                 </li>
                 
             </ul>
@@ -255,8 +255,8 @@
           
           
           
-          <a href="#%e6%89%80%e6%84%9f">
-            所感
+          <a href="#%e3%82%b8%e3%83%a7%e3%83%96">
+            ジョブ
           </a>
         </li>
       
@@ -265,28 +265,8 @@
           
           
           
-          <a href="#%e6%9c%89%e7%94%a8%e3%81%aa%e3%83%aa%e3%83%b3%e3%82%af">
-            有用なリンク
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e3%83%96%e3%83%a9%e3%83%b3%e3%83%81">
-            ブランチ
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#head">
-            HEAD
+          <a href="#%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9">
+            プロセス
           </a>
         </li>
       
@@ -296,40 +276,105 @@
 
     
 
-    <h2 id="所感">所感</h2>
-<p>　Git を使いこなすためには Git の内部構造を理解することが必要不可欠。</p>
-<h2 id="有用なリンク">有用なリンク</h2>
-<ul>
-<li>
-<p><a href="https://www.kaitoy.xyz/tags/git/">[To Be Decided ~]$ find /tags/git/</a><br>
-Git の内部構造を図を用いてわかりやすく解説している。各種コマンドの機能についても内部構造にもとづいた説明がなされており大変わかりやすい。古い記事から順にひと通り目を通すとよい。</p>
-</li>
-<li>
-<p><a href="https://git-scm.com/docs">Git - Reference</a></p>
-<ul>
-<li><a href="https://git-scm.com/docs/gitglossary">Git - gitglossary Documentation</a></li>
-</ul>
-</li>
-<li>
-<p><a href="https://git-scm.com/book/ja/v2">Git - Book</a></p>
-</li>
-<li>
-<p><a href="https://backlog.com/ja/git-tutorial/reference/">逆引きGit</a></p>
-</li>
-<li>
-<p><a href="https://github.github.com/training-kit/downloads/ja/github-git-cheat-sheet/">GitHub Git チートシート - GitHub Cheatsheets</a></p>
-</li>
-</ul>
-<h2 id="ブランチ">ブランチ</h2>
-<p>　<strong>ブランチ</strong>とはあるコミットを指し示すポインタのこと。コミットの集合をブランチとよぶのはあやまり。</p>
-<h2 id="head">HEAD</h2>
-<p>　<strong>HEAD</strong> とはブランチまたはコミットを指し示すポインタのこと。 メタ的には「現在作業している場所」を指し示すものと解釈される。</p>
-<h3 id="detached-head-状態">detached HEAD 状態</h3>
-<p>　HEAD が <strong>detached HEAD 状態</strong>であるとは、HEAD が指し示すものがブランチでなくコミットであるときをいう。<br>
-　この状態のときに Git の何らかの処理を行うと、通常とは違う結果をもたらすことがある。たとえば、HEAD が detached HEAD 状態のときに何度かコミットしてから別のブランチまたはコミットにチェックアウトすると、将来自動的に行われる（または手動で行う）garbage collection という処理によってそれらのコミットはすべて破棄される。</p>
-<ul>
-<li><a href="https://yu8mada.com/2018/05/31/detached-head-state-and-its-caution-in-git/">Git の &lsquo;detached HEAD&rsquo; 状態とその注意点 - yu8mada</a></li>
-</ul>
+    <h2 id="ジョブ">ジョブ</h2>
+<p>　シェルから見た実行中のコマンドを<strong>ジョブ</strong>という。</p>
+<h3 id="コマンドをバックグラウンドジョブとして実行する">コマンドをバックグラウンドジョブとして実行する</h3>
+<pre><code>$ コマンド &amp;
+</code></pre>
+<h4 id="例">例</h4>
+<pre><code>$ find . -size +100M &gt; out.txt &amp;
+[1] 10322
+</code></pre>
+<p>　<code>[1]</code>：ジョブ番号、<code>10322</code>：プロセスID</p>
+<h3 id="実行中または一時停止中のジョブの一覧を表示する">実行中または一時停止中のジョブの一覧を表示する</h3>
+<pre><code>$ jobs
+</code></pre>
+<h4 id="例-1">例</h4>
+<pre><code>$ sleep 100 &amp;
+[1] 10708
+$ sleep 200 &amp;
+[2] 10710
+$ sleep 300 &amp;
+[3] 10713
+$ sleep 400 &amp;
+[4] 10715
+$ jobs
+[1]    running    sleep 100
+[2]    running    sleep 200
+[3]  - running    sleep 300
+[4]  + running    sleep 400
+</code></pre>
+<p>　<code>-</code>：プリビアスジョブ、<code>+</code>：カレントジョブ</p>
+<h3 id="フォアグラウンドジョブを一時停止する">フォアグラウンドジョブを一時停止する</h3>
+<p>　次のキーを入力する。</p>
+<pre><code>[control]+[z]
+</code></pre>
+<h4 id="例-2">例</h4>
+<pre><code>$ sleep 100
+^Z
+zsh: suspended  sleep 100
+$ jobs
+[1]  + suspended  sleep 100
+</code></pre>
+<h3 id="一時停止中のジョブをバックグラウンドジョブにする">一時停止中のジョブをバックグラウンドジョブにする</h3>
+<pre><code>$ bg [%ジョブ番号]
+</code></pre>
+<h4 id="例-3">例</h4>
+<pre><code>$ jobs
+[1]    suspended  sleep 100
+[2]    suspended  sleep 200
+[3]  - suspended  sleep 300
+[4]  + suspended  sleep 400
+$ bg %2
+[2]    continued  sleep 200
+$ jobs
+[1]    suspended  sleep 100
+[2]    running    sleep 200
+[3]  - suspended  sleep 300
+[4]  + suspended  sleep 400
+</code></pre>
+<p>　引数なしで実行するとカレントジョブが対象となる。</p>
+<pre><code>$ jobs
+[1]    suspended  sleep 100
+[2]    suspended  sleep 200
+[3]  - suspended  sleep 300
+[4]  + suspended  sleep 400
+$ bg
+[4]    continued  sleep 400
+$ jobs
+[1]    suspended  sleep 100
+[2]  - suspended  sleep 200
+[3]  + suspended  sleep 300
+[4]    running    sleep 400
+</code></pre>
+<h3 id="フォアグラウンドジョブを終了させる">フォアグラウンドジョブを終了させる</h3>
+<p>　次のキーを入力する。</p>
+<pre><code>[control]+[c]
+</code></pre>
+<h4 id="例-4">例</h4>
+<pre><code>$ jobs
+$ sleep 100
+^C
+$ jobs
+</code></pre>
+<h3 id="実行中または一時停止中のジョブを終了させる">実行中または一時停止中のジョブを終了させる</h3>
+<pre><code>$ kill %ジョブ番号
+</code></pre>
+<h4 id="例-5">例</h4>
+<pre><code>$ jobs
+[1]    running    sleep 100
+[2]    running    sleep 200
+[3]  - running    sleep 300
+[4]  + running    sleep 400
+$ kill %2
+[2]    terminated  sleep 200
+$ jobs
+[1]    running    sleep 100
+[3]  - running    sleep 300
+[4]  + running    sleep 400
+</code></pre>
+<h2 id="プロセス">プロセス</h2>
+<p>　システムから見た実行中のプログラムを<strong>プロセス</strong>という。</p>
 
   </main>
   <div id="disqus-container">

@@ -17,7 +17,7 @@
       <pubDate>Tue, 25 Aug 2020 23:02:29 +0900</pubDate>
       
       <guid>https://www.ig2.org/linux_cmd/</guid>
-      <description>ジョブ 　シェルから見た実行中のコマンドをジョブという。
+      <description>有用なリンク  JM Project (Japanese)  ジョブ 　シェルから見た実行中のコマンドをジョブという。
 コマンドをバックグラウンドジョブとして実行する $ コマンド &amp;amp;  例 $ find . -size +100M &amp;gt; out.txt &amp;amp; [1] 10322  　[1]：ジョブ番号、10322：プロセスID
 実行中または一時停止中のジョブの一覧を表示する $ jobs  例 $ sleep 100 &amp;amp; [1] 10708 $ sleep 200 &amp;amp; [2] 10710 $ sleep 300 &amp;amp; [3] 10713 $ sleep 400 &amp;amp; [4] 10715 $ jobs [1] running sleep 100 [2] running sleep 200 [3] - running sleep 300 [4] + running sleep 400  　-：プリビアスジョブ、+：カレントジョブ</description>
     </item>

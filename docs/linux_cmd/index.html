@@ -255,6 +255,16 @@
           
           
           
+          <a href="#%e6%9c%89%e7%94%a8%e3%81%aa%e3%83%aa%e3%83%b3%e3%82%af">
+            有用なリンク
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
           <a href="#%e3%82%b8%e3%83%a7%e3%83%96">
             ジョブ
           </a>
@@ -270,13 +280,27 @@
           </a>
         </li>
       
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%9f%ba%e6%9c%ac%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89">
+            基本コマンド
+          </a>
+        </li>
+      
     </ol>
   </nav>
 
 
     
 
-    <h2 id="ジョブ">ジョブ</h2>
+    <h2 id="有用なリンク">有用なリンク</h2>
+<ul>
+<li><a href="https://linuxjm.osdn.jp/">JM Project (Japanese)</a></li>
+</ul>
+<h2 id="ジョブ">ジョブ</h2>
 <p>　シェルから見た実行中のコマンドを<strong>ジョブ</strong>という。</p>
 <h3 id="コマンドをバックグラウンドジョブとして実行する">コマンドをバックグラウンドジョブとして実行する</h3>
 <pre><code>$ コマンド &amp;
@@ -375,6 +399,139 @@ $ jobs
 </code></pre>
 <h2 id="プロセス">プロセス</h2>
 <p>　システムから見た実行中のプログラムを<strong>プロセス</strong>という。</p>
+<h2 id="基本コマンド">基本コマンド</h2>
+<h3 id="キーワードでmanページを検索する">キーワードでmanページを検索する</h3>
+<pre><code>$ apropos キーワード
+</code></pre>
+<h4 id="例-6">例</h4>
+<pre><code>$ apropos editor
+ed(1), red(1)            - text editor
+mg(1)                    - emacs-like text editor
+nano(1)                  - Nano's ANOther editor, an enhanced free Pico clone
+pdisk(8)                 - Apple partition table editor
+psed(1)                  - a stream editor
+sed(1)                   - stream editor
+vim(1)                   - Vi IMproved, a programmer's text editor
+zshzle(1)                - zsh command line editor
+Mach-O(5)                - Mach-O assembler and link editor output
+</code></pre>
+<h3 id="行をソートする">行をソートする</h3>
+<pre><code>$ sort [オプション] ファイルパス
+</code></pre>
+<p>　与えられたファイルの各行をソートし、結果を標準出力に書き出す。</p>
+<p><a href="https://qiita.com/richmikan@github/items/cc4494359b1ac2f72311">sortコマンド、基本と応用とワナ - Qiita</a></p>
+<h4 id="オプションなし">オプションなし</h4>
+<p>　文字コード順にソートする（と思っておけばよい）。</p>
+<pre><code>$ cat trump.txt
+again
+Make
+great
+America
+$ sort trump.txt
+America
+Make
+again
+great
+</code></pre>
+<p>　正確には <code>LC_COLLATE</code> という環境変数によって挙動が変わる。</p>
+<blockquote>
+<p>LC_COLLATE<br>
+(特に他の指定がない限り) 全ての比較で用いられる 文字の照合順序を指定する。<br>
+出典：<a href="http://linuxjm.osdn.jp/html/gnumaniak/man1/sort.1.html">Man page of SORT</a></p>
+</blockquote>
+<h4 id="大文字と小文字を区別しない">大文字と小文字を区別しない</h4>
+<pre><code>$ cat trump.txt
+again
+Make
+great
+America
+$ sort -f trump.txt
+again
+America
+great
+Make
+</code></pre>
+<h4 id="逆順">逆順</h4>
+<pre><code>$ cat trump.txt
+again
+Make
+great
+America
+$ sort -r trump.txt
+great
+again
+Make
+America
+$ !! | tail -2 &amp;&amp; !! | head -2
+sort -r trump.txt | tail -2 &amp;&amp; sort -r trump.txt | head -2
+Make
+America
+great
+again
+</code></pre>
+<div style="width: 300px">
+<div class="tenor-gif-embed" data-postid="11955445" data-share-method="host" data-width="100%" data-aspect-ratio="1.1237623762376239"><a href="https://tenor.com/view/donald-trump-trippy-deal-with-it-gif-11955445">Donald Trump Trippy GIF</a> from <a href="https://tenor.com/search/donaldtrump-gifs">Donaldtrump GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</div>
+<h4 id="数値順">数値順</h4>
+<pre><code>$ cat number.txt
+-3
+5
+-7
+11
+2
+$ sort -n number.txt
+-7
+-3
+2
+5
+11
+$ sort number.txt
+-3
+-7
+11
+2
+5
+</code></pre>
+<h4 id="ソート対象の列を指定">ソート対象の列を指定</h4>
+<pre><code>$ cat suchmos.txt
+Vo YONCE 28
+Ba HSU 31
+Dr OK 29
+Gt TAIKING 30
+Dj KCEE 27
+Key TAIHEI 28
+$ sort -k 2,2 suchmos.txt
+Ba HSU 31
+Dj KCEE 27
+Dr OK 29
+Key TAIHEI 28
+Gt TAIKING 30
+Vo YONCE 28
+$ sort -k 2r,2 suchmos.txt
+Vo YONCE 28
+Gt TAIKING 30
+Key TAIHEI 28
+Dr OK 29
+Dj KCEE 27
+Ba HSU 31
+</code></pre>
+<p>　列番号は１から始まることに注意。</p>
+<pre><code>$ cat suchmos.txt
+Vo,YONCE,28
+Ba,HSU,31
+Dr,OK,29
+Gt,TAIKING,30
+Dj,KCEE,27
+Key,TAIHEI,28
+$ sort -t ',' -k 2,2 suchmos.txt
+Ba,HSU,31
+Dj,KCEE,27
+Dr,OK,29
+Key,TAIHEI,28
+Gt,TAIKING,30
+Vo,YONCE,28
+</code></pre>
+<p>　このように区切り文字が半角スペース１文字出ないときは <code>-t</code> オプションで区切り文字を指定する。</p>
 
   </main>
   <div id="disqus-container">

@@ -17,7 +17,7 @@
       <pubDate>Tue, 25 Aug 2020 23:02:29 +0900</pubDate>
       
       <guid>https://www.ig2.org/linux_cmd/</guid>
-      <description>ジョブ 　シェルから見た実行中のコマンドをジョブという。
+      <description>有用なリンク  JM Project (Japanese)  ジョブ 　シェルから見た実行中のコマンドをジョブという。
 コマンドをバックグラウンドジョブとして実行する $ コマンド &amp;amp;  例 $ find . -size +100M &amp;gt; out.txt &amp;amp; [1] 10322  　[1]：ジョブ番号、10322：プロセスID
 実行中または一時停止中のジョブの一覧を表示する $ jobs  例 $ sleep 100 &amp;amp; [1] 10708 $ sleep 200 &amp;amp; [2] 10710 $ sleep 300 &amp;amp; [3] 10713 $ sleep 400 &amp;amp; [4] 10715 $ jobs [1] running sleep 100 [2] running sleep 200 [3] - running sleep 300 [4] + running sleep 400  　-：プリビアスジョブ、+：カレントジョブ</description>
     </item>
@@ -28,7 +28,7 @@
       <pubDate>Tue, 25 Aug 2020 01:13:29 +0900</pubDate>
       
       <guid>https://www.ig2.org/vim/</guid>
-      <description>ノーマルモード    コマンド 説明     q: Exコマンドのコマンドラインウィンドウを開く   q/ または q? 検索コマンドのコマンドラインウィンドウを開く    再描画    コマンド 説明     zt 現在行を画面の１行目にする   zz 現在行を画面の中央にする   zb 現在行を画面の最下行にする    挿入モード    コマンド 説明     &amp;lt;C-o&amp;gt; １つコマンドを実行して挿入モードに戻る   &amp;lt;C-r&amp;gt;{register} 指定したレジスタの内容を挿入する    コマンドラインモード（;, /, ?）    コマンド 説明     &amp;lt;C-r&amp;gt;{register} 指定したレジスタの内容を挿入する   &amp;lt;C-f&amp;gt; ;, /, ?</description>
+      <description>ノーマルモード    コマンド 説明     q: Exコマンドのコマンドラインウィンドウを開く   q/ または q? 検索コマンドのコマンドラインウィンドウを開く    再描画    コマンド 説明     zt 現在行を画面の１行目にする   zz 現在行を画面の中央にする   zb 現在行を画面の最下行にする    挿入モード    コマンド 説明     &amp;lt;C-o&amp;gt; １つコマンドを実行して挿入モードに戻る   &amp;lt;C-r&amp;gt;{register} 指定したレジスタの内容を挿入する    コマンドラインモード（:, /, ?）    コマンド 説明     &amp;lt;C-r&amp;gt;{register} 指定したレジスタの内容を挿入する   &amp;lt;C-f&amp;gt; :, /, ?</description>
     </item>
     
     <item>

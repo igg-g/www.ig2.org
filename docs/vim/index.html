@@ -275,8 +275,18 @@
           
           
           
-          <a href="#%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%e3%83%a9%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%83%89--">
-            コマンドラインモード（:, /, ?）
+          <a href="#%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%e3%83%a9%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%83%89">
+            コマンドラインモード
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#tips">
+            Tips
           </a>
         </li>
       
@@ -297,7 +307,7 @@
 <tbody>
 <tr>
 <td><code>q:</code></td>
-<td>Exコマンドのコマンドラインウィンドウを開く</td>
+<td>Exコマンドのコマンドラインウィンドウ<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>を開く</td>
 </tr>
 <tr>
 <td><code>q/</code> または <code>q?</code></td>
@@ -305,7 +315,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="再描画">再描画</h3>
 <table>
 <thead>
 <tr>
@@ -328,6 +337,38 @@
 </tr>
 </tbody>
 </table>
+<table>
+<thead>
+<tr>
+<th>コマンド</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>!{motion}{filter}</code></td>
+<td><code>{motion}</code> のテキストを外部プログラム <code>{filter}</code> でフィルタ処理する</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>コマンド</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[c</code></td>
+<td>カーソル前方の変更箇所へ移動</td>
+</tr>
+<tr>
+<td><code>]c</code></td>
+<td>カーソル後方の変更箇所へ移動</td>
+</tr>
+</tbody>
+</table>
 <h2 id="挿入モード">挿入モード</h2>
 <table>
 <thead>
@@ -347,7 +388,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="コマンドラインモード--">コマンドラインモード（<code>:</code>, <code>/</code>, <code>?</code>）</h2>
+<h2 id="コマンドラインモード">コマンドラインモード</h2>
+<table>
+<thead>
+<tr>
+<th>コマンド</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:on[ly]</code></td>
+<td>アクティブでないウィンドウをすべて閉じる</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -366,6 +421,33 @@
 </tr>
 </tbody>
 </table>
+<h2 id="tips">Tips</h2>
+<table>
+<thead>
+<tr>
+<th>コマンド</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:cd %:h</code></td>
+<td>カレントディレクトリをカレントファイルのディレクトリに変更する</td>
+</tr>
+<tr>
+<td><code>:w !sudo tee % &gt; /dev/null</code></td>
+<td><code>sudo vim</code> し忘れたときにカレントファイルを無理やり書き込む</td>
+</tr>
+</tbody>
+</table>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>入力中または過去に使用したコマンドを編集して実行することができるウィンドウ <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
   </main>
   <div id="disqus-container">

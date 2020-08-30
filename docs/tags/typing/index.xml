@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>typing on obメモ</title>
+    <link>https://www.ig2.org/tags/typing/</link>
+    <description>Recent content in typing on obメモ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 30 Aug 2020 15:11:27 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.ig2.org/tags/typing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>タイピング</title>
+      <link>https://www.ig2.org/typing/</link>
+      <pubDate>Sun, 30 Aug 2020 15:11:27 +0900</pubDate>
+      
+      <guid>https://www.ig2.org/typing/</guid>
+      <description>コードをタイプする速度を上げたいならば、コードをタイプするべきであって、寿司を食っている場合ではない。</description>
+    </item>
+    
+  </channel>
+</rss>
